@@ -1,0 +1,33 @@
+{
+    "name": "jncinet/qihucms-cloudflare-stream",
+    "description": "Cloudflare stream for qihucms.",
+    "keywords": [
+        "laravel",
+        "qihucms",
+        "cloudflare",
+        "stream"
+    ],
+    "homepage": "https://www.qihucms.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhangye",
+            "email": "y@qilephp.com"
+        }
+    ],
+    "require": {
+        "jncinet/cloudflare-stream": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qihucms\\CloudflareStream\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qihucms\\CloudflareStream\\CloudflareStreamServiceProvider"
+            ]
+        }
+    }
+}
